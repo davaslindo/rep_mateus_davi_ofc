@@ -35,10 +35,10 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Teste
-      run: covarage run app_test.py
+      run: coverage run app_test.py
 
     - name: relatorio_teste
-      run: covarage report -a
+      run: coverage report -a
 
     - name: Render Deploy Actions
       uses: johnbeynon/render-deploy-action@v0.0.8

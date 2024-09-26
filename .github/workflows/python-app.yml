@@ -38,7 +38,7 @@ jobs:
       run: coverage run app_test.py
 
     - name: relatorio_teste
-      run: coverage report -a
+      run: coverage report -m
 
     - name: Render Deploy Actions
       uses: johnbeynon/render-deploy-action@v0.0.8
